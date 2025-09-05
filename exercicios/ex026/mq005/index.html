@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projeto responsivo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">opção 1</a></li>
                 <li><a href="#">opção 2</a></li>
@@ -26,5 +28,14 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur optio aspernatur quis adipisci provident dolores voluptas ea? Eos fugiat quod consectetur tempore reprehenderit. Eaque provident assumenda, cumque culpa inventore magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iusto, laboriosam quasi ratione minima in maiores doloremque cumque odio nulla numquam facilis recusandae soluta quos fuga autem. Eos, eius quae.</p>
         </article>
     </main>
-</body>
+    <script>
+        function clickMenu() {
+               if (document.getElementById("itens").style.display == "block") {
+                   document.getElementById("itens").style.display = "none"
+               } else {
+                   document.getElementById("itens").style.display = "block"
+               }
+            }
+    </script>
+    </body>
 </html>
